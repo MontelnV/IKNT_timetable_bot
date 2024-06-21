@@ -11,3 +11,26 @@
   ```sh
   docker run -d --name bot bot
   ```
+
+## Запуск без контейнера Docker
+
+Запуск:
+  ```sh
+  python run.py
+  ```
+Создание venv:
+  ```sh
+  python -m venv venv
+  ```
+Активация venv:
+  ```sh
+  .\venv\Scripts\Activate.ps1
+  ```
+Установка библиотек:
+  ```sh
+  pip install requirements.txt
+  ```
+
+* После перезапуска приложения необходимо вручную удалить образ БД .db
+* Для автоматического сброса раскомментируйте в файле run.py функцию drop_tables()
+* Для тестового добавления секретаря (помимо вас) раскомментируйте 28: строки в файле app/handlers.py
