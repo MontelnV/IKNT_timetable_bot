@@ -5,7 +5,7 @@
 
 Сборка проекта:
   ```sh
-  docker build . --tag events-backend
+  docker build . --tag bot
   ```
 Запуск проекта:
   ```sh
